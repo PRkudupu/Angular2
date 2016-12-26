@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 //Decorator
 @Component({
   selector: 'my-app',
-  template: `<user></user>
+  template: `<pm-products></pm-products>
     `,
 })
 //Angular Component
