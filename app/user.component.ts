@@ -17,7 +17,10 @@ import { Component } from '@angular/core';
         {{hobby}}
     </ul>
   </div>
-  
+  <br/>
+    <label>Name :<br/>
+    <input type="text"  name="name" [(ngModel)]="name"/>
+     {{name}}
       `,
 })
 //Angular Component
