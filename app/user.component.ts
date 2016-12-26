@@ -9,13 +9,13 @@ import { Component } from '@angular/core';
   <p> <strong>MI  : </strong>{{MI}}</p>
   <p> <strong>DOB : </strong>{{DOB}}</p>
   <p> <strong>address :  </strong>{{address.Street}} {{address.City}} {{address.State}} </p>
-  {{hobbies}}
-  <ul> 
+  <div *ngIf="showhobbies">
+  <h2>hobbies</h2>
+    <ul> 
         <li *ngFor="let hobby of hobbies">
         {{hobby}}
-        </li>
-  </ul>
-
+    </ul>
+  </div>
   
       `,
 })
@@ -26,7 +26,8 @@ export class UserComponent  {
   MI:string;
   DOB:string;
   address:address;
-  hobbies:string [];  
+  hobbies:string []; 
+  showhobbies:boolean; 
 //Constructor
     constructor(){
     this.firstName = 'Prathap';
@@ -39,6 +40,7 @@ export class UserComponent  {
                     State:"CA"
     };
     this.hobbies=['Music','Movies','Sports' ]
+    this.showhobbies=false;
   }
 }
 //interface address{
