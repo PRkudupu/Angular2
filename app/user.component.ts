@@ -9,7 +9,15 @@ import { Component } from '@angular/core';
   <p> <strong>MI  : </strong>{{MI}}</p>
   <p> <strong>DOB : </strong>{{DOB}}</p>
   <p> <strong>address :  </strong>{{address.Street}} {{address.City}} {{address.State}} </p>
-    `,
+  {{hobbies}}
+  <ul> 
+        <li *ngFor="let hobby of hobbies">
+        {{hobby}}
+        </li>
+  </ul>
+
+  
+      `,
 })
 //Angular Component
 export class UserComponent  { 
@@ -17,8 +25,8 @@ export class UserComponent  {
   lastName :string;
   MI:string;
   DOB:string;
-  address:address
-    
+  address:address;
+  hobbies:string [];  
 //Constructor
     constructor(){
     this.firstName = 'Prathap';
@@ -29,7 +37,8 @@ export class UserComponent  {
                     Street:"Vallco Pkwy",
                     City:"Cupertino",
                     State:"CA"
-    }
+    };
+    this.hobbies=['Music','Movies','Sports' ]
   }
 }
 //interface address{
