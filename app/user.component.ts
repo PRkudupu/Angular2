@@ -18,9 +18,21 @@ import { Component } from '@angular/core';
     </ul>
   </div>
   <br/>
-    <label>Name :<br/>
-    <input type="text"  name="name" [(ngModel)]="name"/>
-     {{name}}
+    <label>First Name :</label><br/>
+        <input type="text"  name="firstName" [(ngModel)]="firstName"/> <br/>
+    <label>Last Name :</label><br/>
+        <input type="text"  name="lastName" [(ngModel)]="lastName"/><br/>
+    <label>MI :</label><br/>
+        <input type="text"  name="MI" [(ngModel)]="MI"/><br/>
+    <label>DOB :</label><br/>
+        <input type="text"  name="DOB" [(ngModel)]="DOB"/><br/>
+    <label>Address :</label><br/>
+        <label>Street :</label><br/>
+    <input type="text"  name="Street" [(ngModel)]="address.Street"/><br/>
+        <label>City :</label><br/>
+    <input type="text"  name="City" [(ngModel)]="address.City"/><br/>
+        <label>State :</label><br/>
+    <input type="text"  name="State" [(ngModel)]="address.State"/><br/>
       `,
 })
 //Angular Component
