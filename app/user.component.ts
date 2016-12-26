@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   <p> <strong>MI  : </strong>{{MI}}</p>
   <p> <strong>DOB : </strong>{{DOB}}</p>
   <p> <strong>address :  </strong>{{address.Street}} {{address.City}} {{address.State}} </p>
+  <button (click)=togglehobbies()>{{ showhobbies ? "Hide Hobbies":"Show hobbies"}}</button>
   <div *ngIf="showhobbies">
   <h2>hobbies</h2>
     <ul> 
@@ -41,6 +42,14 @@ export class UserComponent  {
     };
     this.hobbies=['Music','Movies','Sports' ]
     this.showhobbies=false;
+  }
+  //functions
+  togglehobbies(){
+      if(this.showhobbies==true){
+      this.showhobbies=false;}
+      else{
+      this.showhobbies=true;
+      }
   }
 }
 //interface address{
