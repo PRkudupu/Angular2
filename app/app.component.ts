@@ -3,10 +3,13 @@ import { Component } from '@angular/core';
 //Decorator
 @Component({
   selector: 'my-app',
-  template: `<pm-products></pm-products>
+  template: `
+    <div><h1>{{pageTitle}}</h1></div>
+    <pm-products></pm-products>
     `,
 })
 //Angular Component
 export class AppComponent  { 
-  
+  pageTitle:string ='Product Management';
+ 
 }
