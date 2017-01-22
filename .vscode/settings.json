@@ -4,9 +4,9 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/app/**/*.js": true,
+        "**/app/**/*.js": false,
         "**/.DS_Store": true,
-         "**/*.map": true
+         "**/*.map": false
     },
     //files to autosave after "editor.quickSuggestionsDelay": 
     "files.autoSave": "afterDelay"

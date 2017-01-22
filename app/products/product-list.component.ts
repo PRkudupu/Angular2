@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 //Import interface
-import {Iproduct} from './product';
+import {IProduct} from './product';
 //view for the component
 @Component({
     selector:'pm-products',
@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit{
      imageMargin:number=2;
      showImage:boolean=false;
      listFilter:string='cart';
-     products:Iproduct[ ]=[
+     products:IProduct[ ]=[
                     {
                       "productId": 1,
                       "productName": "Leaf Rake",
