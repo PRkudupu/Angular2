@@ -1,30 +1,37 @@
 import {Injectable } from '@angular/core';
+//used for http and response
+import { Http, Response } from '@angular/http';
+//used for observable
+import { Observable } from 'rxjs/Observable';
+// used for do operator
+import 'rxjs/add/operator/do';
+// used for catch operator
+import 'rxjs/add/operator/catch';
+//Used for map operator. This loads the operator without importing
+import 'rxjs/add/operator/map';
+
 import { IProduct } from './product';
+
+
+@Injectable()
 export class ProductService{
-    
-    getProducts():IProduct[]{
-        return [
-                    {
-                      "productId": 1,
-                      "productName": "Lead Rake",
-                      "productCode": "GDN-0011",
-                      "releaseDate": "March 19, 2016",
-                      "description": "Leaf rake with 48-inch wooden handle.",
-                      "price": 19.95,
-                      "starRating": 3.2,
-                      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
-                  },
-                  {
-                      "productId": 2,
-                      "productName": "Garden Cart",
-                      "productCode": "GDN-0023",
-                      "releaseDate": "March 18, 2016",
-                      "description": "15 gallon capacity rolling garden cart",
-                      "price": 32.99,
-                      "starRating": 4.2,
-                      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-                  }
- ];
-    }   
+    //we need to change it to the actual web server
+    private _productUrl='api/products/products.json'
+    //constructor
+    constructor(private _http:Http){}
+
+    getProducts(): Observable<IProduct[]> {
+        return this._http.get(this._productUrl)
+                       // when we get the response we use the map operator
+                        .map((response: Response) => <IProduct[]> response.json())
+                        // allows us to peak the data returned from the server without disrupting the flow
+                        .do(data => console.log('All: ' +  JSON.stringify(data)))
+                        .catch(this.handleError);
+    }
+    //method to handle error
+    private handleError(error: Response) {
+        console.error(error);
+        return Observable.throw(error.json().error || 'Server error');
+    }           
 
 }

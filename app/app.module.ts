@@ -2,6 +2,8 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 //form module
 import {FormsModule} from '@angular/forms'
+//http module
+import {HttpModule} from '@angular/http'
 
 import { AppComponent }  from './app.component';
 import { UserComponent }  from './user.component';
@@ -11,7 +13,9 @@ import { StarComponent }  from './shared/star.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule,FormsModule ],
+  imports:      [ BrowserModule,
+                  FormsModule,
+                  HttpModule],
   declarations: [ AppComponent , 
                   UserComponent,
                   ProductListComponent,
