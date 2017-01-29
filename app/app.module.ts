@@ -10,7 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent }  from './app.component';
 //User component
-import { UserComponent }  from './user.component';
+import { UserComponent }  from './users/user-list.component';
 //Product list component
 import { ProductListComponent }  from './products/product-list.component';
 //Product detail component
@@ -21,6 +21,9 @@ import { ProductFilterPipe }  from './products/product-filter.pipe';
 import { StarComponent }  from './shared/star.component';
 //Welcome component
 import { WelcomeComponent }  from './home/welcome.component';
+//Welcome component
+import { CompanyListComponent }  from './company/company-list.component';
+
 
 @NgModule({
   imports: [
@@ -32,6 +35,8 @@ import { WelcomeComponent }  from './home/welcome.component';
       { path: 'products', component: ProductListComponent },
       { path: 'product/:id', component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent },
+      { path: 'users', component: UserComponent },
+      { path: 'company', component: CompanyListComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
@@ -42,7 +47,9 @@ import { WelcomeComponent }  from './home/welcome.component';
     ProductListComponent,
     ProductDetailComponent,
     ProductFilterPipe,
-    StarComponent
+    StarComponent,
+    UserComponent,
+    CompanyListComponent
   ],
   bootstrap: [ AppComponent ]
 })

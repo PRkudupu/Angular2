@@ -1,0 +1,23 @@
+[
+    {
+        "companyId": 1,
+        "companyName": "Microsoft",
+        "location": "Seatle"
+       
+    },
+    {
+        "companyId": 2,
+        "companyName": "Amazon",
+        "location": "Seatle"
+    },
+    {
+        "companyId": 3,
+        "companyName": "Facebook",
+        "location": "Palo alto"
+    },
+    {
+        "companyId": 4,
+        "companyName": "Oracle",
+        "location": "San Jose"
+    }
+]
