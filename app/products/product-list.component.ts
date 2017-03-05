@@ -6,8 +6,8 @@ import { ProductService } from './product.service';
 @Component({
     selector:'pm-products',
     templateUrl:'app/products/product-list.component.html',
-    styleUrls: ['app/products/product-list.component.css']
-
+    styleUrls: ['app/products/product-list.component.css'] ,
+    providers:[ProductService]
 })
 //class
 export class ProductListComponent implements OnInit{

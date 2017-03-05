@@ -15,7 +15,7 @@ import { ICompany } from './company';
 @Injectable()
 export class CompanyService{
     //we need to change it to the actual web server
-    private _companyUrl='api/company/company.json'
+    private _companyUrl='http://localhost:5000/api/companys'
     //constructor
     constructor(private _http:Http){}
 
