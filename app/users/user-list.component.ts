@@ -14,13 +14,15 @@ export class UserComponent  {
    
   //Constructor
     constructor(){
-    this.firstName = 'Prathap';
-    this.lastName="Kudupu";
-    this.MI="H";
+    this.firstName = '';
+    this.lastName="";
+    this.MI="";
      }
   addUsers(){
     console.log(event);
-    //console.log(this.userForm.value);
+    console.log(this.firstName);
+    console.log(this.lastName);
+    console.log(this.MI);
   }
  }
 
