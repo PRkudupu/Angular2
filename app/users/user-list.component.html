@@ -1,30 +1,23 @@
   <h1>User Registration </h1>
-  <p> <strong>First Name : </strong>{{firstName}} </p>
-  <p> <strong>Last Name : </strong>{{lastName}} </p>
-  <p> <strong>MI  : </strong>{{MI}}</p>
-  <p> <strong>DOB : </strong>{{DOB}}</p>
-  <p> <strong>address :  </strong>{{address.Street}} {{address.City}} {{address.State}} </p>
-  <button (click)=togglehobbies()>{{ showhobbies ? "Hide Hobbies":"Show hobbies"}}</button>
-  <div *ngIf="showhobbies">
-  <h2>hobbies</h2>
-    <ul> 
-        <li *ngFor="let hobby of hobbies">
-        {{hobby}}
-    </ul>
+  <form (ngSubmit)="addUsers()" #userForm="ngForm">
+   <div class="container">
+       <div class="row ">
+           <div class="col-md-12" id="addUsers">
+                <div class="col-md-4">
+                    <label>First Name :</label><br/>
+                    <input type="text"  name="firstName" [(ngModel)]="firstName"/> <br/>
+                </div>
+                <div class="col-md-4">
+                    <label>Last Name :</label><br/>
+                    <input type="text"  name="lastName" [(ngModel)]="lastName"/><br/>
+                </div>
+                  <div class="col-md-2">
+                    <label>MI :</label><br/>
+                    <input type="text"  name="MI" [(ngModel)]="MI"/><br/>
+                  </div>
+                  <div class="col-md-2" id="submitUsers">
+                    <input type="submit" class="btn btn-success" value="Add" /><br/>
+                  </div>
+            </div>
+     </div>
   </div>
-  <br/>
-    <label>First Name :</label><br/>
-        <input type="text"  name="firstName" [(ngModel)]="firstName"/> <br/>
-    <label>Last Name :</label><br/>
-        <input type="text"  name="lastName" [(ngModel)]="lastName"/><br/>
-    <label>MI :</label><br/>
-        <input type="text"  name="MI" [(ngModel)]="MI"/><br/>
-    <label>DOB :</label><br/>
-        <input type="text"  name="DOB" [(ngModel)]="DOB"/><br/>
-    <label>Address :</label><br/>
-        <label>Street :</label><br/>
-    <input type="text"  name="Street" [(ngModel)]="address.Street"/><br/>
-        <label>City :</label><br/>
-    <input type="text"  name="City" [(ngModel)]="address.City"/><br/>
-        <label>State :</label><br/>
-    <input type="text"  name="State" [(ngModel)]="address.State"/><br/>
