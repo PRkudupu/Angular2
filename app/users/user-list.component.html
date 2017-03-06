@@ -3,12 +3,30 @@
    <div class="container">
        <div class="row ">
            <div class="col-md-12" id="addUsers">
-                <div class="col-md-4">
+                <div class="col-md-4 formGroup">
                    <label>First Name :</label><br/>
                    <!--$event passes the value !-->
-                    <input type="text"  name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
+                    <input type="text"  class="form-control" name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
                 </div>
-                
+                <div class="col-md-4 formGroup">
+                    <label>Last Name :</label><br/>
+                    <input type="text"  class="form-control" name="lastName" [ngModel]="userModel.lastName" /><br/>
+                </div>
+                <div class="col-md-2">
+                  <label>MI :</label><br/>
+                  <input type="text"  class="form-control" name="MI" /><br/>
+                </div>
+                  <div class="col-md-2" id="submitUsers">
+                    <input type="submit" class="btn btn-success" value="Add" /><br/>
+                  </div>
             </div>
+       </div>
+       <div class="row ">
+            <div class="col-md-12 checkbox" >
+                <div class="col-md-4 formGroup">
+                   <label>Is Admin {{isFullTime | json}}</label><br/>
+                     <input type="checkbox" name="isAdmin" [(ngModel)]="isFullTime"/><br/>
+                 </div>
+            </div>
+       </div>
      </div>
-  </div>

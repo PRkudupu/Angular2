@@ -13,12 +13,12 @@ export class UserComponent  {
   lastName :string;
  //Constructor
     constructor(){
-    this.firstName = 'Prathap';
-    this.lastName='Kudupu';
-     }
+    }
    //New instance of user Model
    userModel=new User('Prathap','Kudupu')
-  
+   isFullTime = false;
+   
+    
    firstNameToUpperCase(value:string){
        //Check if the value exists
       if(value.length > 0)
@@ -33,9 +33,6 @@ export class UserComponent  {
       }
    }
     addUsers(){
-    console.log(event);
-    console.log(this.firstName);
-    console.log(this.lastName);
-
+  
   }
  }
