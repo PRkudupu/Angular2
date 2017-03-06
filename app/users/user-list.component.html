@@ -1,9 +1,10 @@
   <h1>User Registration </h1>
-  <form (ngSubmit)="addUsers()" #userForm="ngForm">
+  <form (ngSubmit)="addUsers()">
    <div class="container">
        <div class="row ">
            <div class="col-md-12" id="addUsers">
                 <div class="col-md-4">
+                   Model: {{ userModel | json }}
                     <label>First Name :</label><br/>
                     <input type="text"  name="firstName" [(ngModel)]="firstName"/> <br/>
                 </div>
@@ -13,7 +14,7 @@
                 </div>
                   <div class="col-md-2">
                     <label>MI :</label><br/>
-                    <input type="text"  name="MI" [(ngModel)]="MI"/><br/>
+                    <input type="text"  name="MI" /><br/>
                   </div>
                   <div class="col-md-2" id="submitUsers">
                     <input type="submit" class="btn btn-success" value="Add" /><br/>

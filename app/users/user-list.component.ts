@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 //Import interface
 import {IUser} from './user';
+import {User} from './Models/user.model';
 
 @Component({
     templateUrl: 'app/users/user-list.component.html',
@@ -10,19 +11,18 @@ import {IUser} from './user';
 export class UserComponent  { 
   firstName :string;
   lastName :string;
-  MI:string;
-   
-  //Constructor
+ //Constructor
     constructor(){
-    this.firstName = '';
-    this.lastName="";
-    this.MI="";
+    this.firstName = 'Prathap';
+    this.lastName='Kudupu';
      }
-  addUsers(){
+   //New instance of user Model
+   userModel=new User('','')
+  
+    addUsers(){
     console.log(event);
     console.log(this.firstName);
     console.log(this.lastName);
-    console.log(this.MI);
+
   }
  }
-
