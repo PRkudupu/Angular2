@@ -20,7 +20,17 @@ export class UserComponent  {
    userModel=new User('Prathap','Kudupu')
   
    firstNameToUpperCase(value:string){
-       alert("hello");
+       //Check if the value exists
+      if(value.length > 0)
+      {
+        //Fetch the first character and turn it into upper and leave the rest
+        this.userModel.firstName=value.charAt(0).toUpperCase() + value.slice(1);
+
+      }
+      else
+      {
+          this.userModel.firstName=value;
+      }
    }
     addUsers(){
     console.log(event);
