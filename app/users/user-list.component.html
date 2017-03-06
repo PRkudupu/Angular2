@@ -1,16 +1,15 @@
   <h1>User Registration </h1>
-  <form (ngSubmit)="addUsers()">
+  <form (ngSubmit)="addUsers()" #form="ngForm"  novalidate>
    <div class="container">
        <div class="row ">
            <div class="col-md-12" id="addUsers">
                 <div class="col-md-4">
-                   Model: {{ userModel | json }}
-                    <label>First Name :</label><br/>
-                    <input type="text"  name="firstName" [(ngModel)]="firstName"/> <br/>
+                   <label>First Name :</label><br/>
+                    <input type="text"  name="firstName" [ngModel]="userModel.firstName"/> <br/>
                 </div>
                 <div class="col-md-4">
                     <label>Last Name :</label><br/>
-                    <input type="text"  name="lastName" [(ngModel)]="lastName"/><br/>
+                    <input type="text"  name="lastName" [(ngModel)]="userModel.lastName"/><br/>
                 </div>
                   <div class="col-md-2">
                     <label>MI :</label><br/>

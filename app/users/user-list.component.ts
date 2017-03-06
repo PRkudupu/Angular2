@@ -17,7 +17,7 @@ export class UserComponent  {
     this.lastName='Kudupu';
      }
    //New instance of user Model
-   userModel=new User('','')
+   userModel=new User('Prathap','Kudupu')
   
     addUsers(){
     console.log(event);
