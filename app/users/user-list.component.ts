@@ -19,6 +19,9 @@ export class UserComponent  {
    //New instance of user Model
    userModel=new User('Prathap','Kudupu')
   
+   firstNameToUpperCase(value:string){
+       alert("hello");
+   }
     addUsers(){
     console.log(event);
     console.log(this.firstName);
