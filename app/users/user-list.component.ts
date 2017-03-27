@@ -15,10 +15,10 @@ export class UserComponent  {
     constructor(){
     }
    //New instance of user Model
-   userModel=new User('Prathap','Kudupu')
+    languages=['English','Spanish','Other'];
+    userModel=new User('Prathap','Kudupu',true,'w2','Spanish')
    isFullTime = false;
    MI="";
-   languages=['English','Spanish','Other'];
    sexType='';
    
     
