@@ -9,11 +9,11 @@
                     <input type="text"  required class="form-control" name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
                 </div>
                 <div class="col-md-4 formGroup">
-                    <label>Last Name :</label><br/> {{userModel.lastName}}
+                    <label>Last Name :</label><br/> 
                     <input type="text"  class="form-control" name="lastName" [(ngModel)]="userModel.lastName" /><br/>
                 </div>
                 <div class="col-md-2">
-                  <label>MI :{{MI}} </label><br/>
+                  <label>MI : </label><br/>
                   <input type="text" required class="form-control" name="MI" ng-model /><br/>
                 </div>
                   <div class="col-md-2" id="submitUsers">
@@ -39,6 +39,19 @@
                   <div class="col-md-2">
                        <input type="radio" name="sexType" [(ngModel)]="sexType" value="f"/><br/>Female
                  </div>
+            </div>
+          
+       </div>
+        <div class="row ">
+            <div class="col-md-12 " >
+                <div class="col-md-4 formGroup">
+                   <label>Primary language :</label><br/>
+                   <select class="form-control">
+                      <option>English</option>
+                      <option>Spanish</option>
+                      <option>French</option>
+                  </select>
+              </div>
             </div>
        </div>
      </div>
