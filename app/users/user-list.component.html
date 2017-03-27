@@ -1,20 +1,21 @@
   <h1>User Registration </h1>
   <form (ngSubmit)="addUsers()" #form="ngForm"  novalidate>
+   <form #form=ngForm>
    <div class="container">
        <div class="row ">
            <div class="col-md-12" id="addUsers">
                 <div class="col-md-4 formGroup">
                    <label>First Name :</label><br/>
                    <!--$event passes the value !-->
-                    <input type="text"  class="form-control" name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
+                    <input type="text"  required class="form-control" name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
                 </div>
                 <div class="col-md-4 formGroup">
                     <label>Last Name :</label><br/>
                     <input type="text"  class="form-control" name="lastName" [ngModel]="userModel.lastName" /><br/>
                 </div>
                 <div class="col-md-2">
-                  <label>MI :</label><br/>
-                  <input type="text"  class="form-control" name="MI" /><br/>
+                  <label>MI :{{MI}} </label><br/>
+                  <input type="text" required class="form-control" name="MI" ng-model /><br/>
                 </div>
                   <div class="col-md-2" id="submitUsers">
                     <input type="submit" class="btn btn-success" value="Add" /><br/>
@@ -23,10 +24,24 @@
        </div>
        <div class="row ">
             <div class="col-md-12 checkbox" >
-                <div class="col-md-4 formGroup">
-                   <label>Is Admin {{isFullTime | json}}</label><br/>
+                <div class="col-md-4 ">
+                   <label>Is Admin </label><br/>
                      <input type="checkbox" name="isAdmin" [(ngModel)]="isFullTime"/><br/>
                  </div>
             </div>
        </div>
+       <div class="row ">
+            <div class="col-md-12 radio" >
+               <label>Sex</label><br/>
+               <!--Names are the same for the radio button !-->
+                <div class="col-md-2 ">
+                     <input type="radio" name="sexType" [(ngModel)]="sexType" value="m"/><br/>Male
+                 </div>
+                  <div class="col-md-2">
+                       <input type="radio" name="sexType" [(ngModel)]="sexType" value="f"/><br/>Female
+                 </div>
+            </div>
+       </div>
      </div>
+
+   </form>

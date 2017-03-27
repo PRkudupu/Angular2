@@ -17,6 +17,8 @@ export class UserComponent  {
    //New instance of user Model
    userModel=new User('Prathap','Kudupu')
    isFullTime = false;
+   MI="";
+   sexType='';
    
     
    firstNameToUpperCase(value:string){
