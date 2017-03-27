@@ -47,9 +47,10 @@
                 <div class="col-md-4 formGroup">
                    <label>Primary language :</label><br/>
                    <select class="form-control">
-                      <option>English</option>
-                      <option>Spanish</option>
-                      <option>French</option>
+                      <option *ngFor ="let lang of languages">
+                         {{lang}}
+                      </option>
+                      
                   </select>
               </div>
             </div>

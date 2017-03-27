@@ -18,6 +18,7 @@ export class UserComponent  {
    userModel=new User('Prathap','Kudupu')
    isFullTime = false;
    MI="";
+   languages=['English','Spanish','Other'];
    sexType='';
    
     
