@@ -7,11 +7,13 @@
                    <label>First Name :</label><br/>
                    <!--$event passes the value !-->
                     <input type="text"  required class="form-control" name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
-                </div>
+                     <input type="text"  required class="form-control" name="firstName1" [ngModel]="firstName1"  /> <br/>
+                  
+                     </div>
                 <div class="col-md-4 formGroup">
                     <label>Last Name :</label><br/> 
                     <input type="text"  class="form-control" name="lastName" [(ngModel)]="userModel.lastName" /><br/>
-                </div>
+                 </div>
                 <div class="col-md-2">
                   <label>MI : </label><br/>
                   <input type="text" required class="form-control" name="MI" ng-model /><br/>

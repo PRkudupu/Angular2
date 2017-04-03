@@ -9,10 +9,11 @@ import {User} from './Models/user.model';
 })
 //Angular Component
 export class UserComponent  { 
-  firstName :string;
+  firstName1 :string;
   lastName :string;
  //Constructor
     constructor(){
+        this.firstName1="test"
     }
    //New instance of user Model
     languages=['English','Spanish','Other'];
