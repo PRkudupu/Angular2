@@ -17,10 +17,10 @@ export class UserComponent  {
     }
    //New instance of user Model
     languages=['English','Spanish','Other'];
-    userModel=new User('Prathap','Kudupu',true,'w2','Spanish')
-   isFullTime = false;
-   MI="";
-   sexType='';
+    userModel=new User('Prathap','Kudupu')
+    isFullTime = false;
+    MI="";
+    sexType='';
    
     
    firstNameToUpperCase(value:string){
@@ -36,7 +36,8 @@ export class UserComponent  {
           this.userModel.firstName=value;
       }
    }
-    addUsers(){
-  
+    addUsers(model:User){
+   alert('hello');
+   console.log(model);
   }
  }

@@ -1,14 +1,13 @@
   <h1>User Registration </h1>
-  <form (ngSubmit)="addUsers()" #form="ngForm"  novalidate>
+  <form (ngSubmit)="addUsers(userModel)" #form="ngForm"  novalidate>
    <div class="container">
        <div class="row ">
            <div class="col-md-12" id="addUsers">
                 <div class="col-md-4 formGroup">
                    <label>First Name :</label><br/>
                    <!--$event passes the value !-->
-                    <input type="text"  required class="form-control" name="firstName" [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
-                     <input type="text"  required class="form-control" name="firstName1" [ngModel]="firstName1"  /> <br/>
-                  
+                    <input type="text"  required class="form-control" name="firstName" 
+                    [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
                      </div>
                 <div class="col-md-4 formGroup">
                     <label>Last Name :</label><br/> 
