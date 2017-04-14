@@ -4,14 +4,17 @@
        <div class="row ">
            <div class="col-md-12" id="addUsers">
                 <div class="col-md-4 formGroup">
-                   <label>First Name :</label><br/>
+                   <label>First Name :     
+                 </label> 
+                   <br/>
                    <!--$event passes the value !-->
-                    <input type="text"  required class="form-control" name="firstName" 
-                    [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
+                    <input #firstName type="text"  required class="form-control" name="firstName" maxlength="3" 
+                                     [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
+                    <h4> {{firstName.className}}  </h4> 
                      </div>
                 <div class="col-md-4 formGroup">
                     <label>Last Name :</label><br/> 
-                    <input type="text"  class="form-control" name="lastName" [(ngModel)]="userModel.lastName" /><br/>
+                    <input type="text"  class="form-control" name="lastName" maxlength=15 [(ngModel)]="userModel.lastName" /><br/>
                  </div>
                 <div class="col-md-2">
                   <label>MI : </label><br/>
@@ -20,6 +23,7 @@
                   <div class="col-md-2" id="submitUsers">
                     <input type="submit" class="btn btn-success" value="Add" /><br/>
                   </div>
+                    
             </div>
        </div>
        <div class="row ">
@@ -55,6 +59,7 @@
                   </select>
               </div>
             </div>
+          
        </div>
      </div>
 

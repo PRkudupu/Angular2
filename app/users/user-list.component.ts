@@ -17,7 +17,7 @@ export class UserComponent  {
     }
    //New instance of user Model
     languages=['English','Spanish','Other'];
-    userModel=new User('Prathap','Kudupu')
+    userModel=new User('','')
     isFullTime = false;
     MI="";
     sexType='';
