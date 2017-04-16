@@ -3,12 +3,12 @@
    <div class="container">
        <div class="row ">
            <div class="col-md-12" id="addUsers">
-                <div class="col-md-4 formGroup">
-                   <label>First Name :     
+                <div class="col-md-4 formGroup [class.has-error]=firstName.invalid && firstName.touched">
+                   <label class="control-label">First Name :     
                  </label> 
                    <br/>
                    <!--$event passes the value !-->
-                    <input #firstName="ngModel" type="text"  required class="form-control" name="firstName" maxlength="3" 
+                    <input #firstName="ngModel" type="text" pattern="...+" required class="form-control" name="firstName" maxlength="15" 
                                      [ngModel]="userModel.firstName" (ngModelChange)="firstNameToUpperCase($event)" /> <br/>
                     
                  </div>
@@ -26,10 +26,10 @@
                   </div>
              </div>
        </div>
-         <div *ngIf="firstName.invalid" class="row ">
+         <div *ngIf="firstName.invalid && firstName.touched" class="row ">
            <div class="col-md-12">
                   <div class="alert alert-danger">
-                   First Name is required.
+                   First Name is required and firstName must be atleast 3 characters.
                  </div>
             </div>
         </div>
