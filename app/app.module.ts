@@ -23,6 +23,9 @@ import { StarComponent }  from './shared/star.component';
 import { WelcomeComponent }  from './home/welcome.component';
 //Welcome component
 import { CompanyListComponent }  from './company/company-list.component';
+//Import form sampe component
+import { formSampleComponent }  from './sample/formSample.Component';
+
 
 
 @NgModule({
@@ -37,6 +40,7 @@ import { CompanyListComponent }  from './company/company-list.component';
       { path: 'welcome', component: WelcomeComponent },
       { path: 'users', component: UserComponent },
       { path: 'company', component: CompanyListComponent },
+      { path: 'sample', component: formSampleComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
@@ -49,7 +53,9 @@ import { CompanyListComponent }  from './company/company-list.component';
     ProductFilterPipe,
     StarComponent,
     UserComponent,
-    CompanyListComponent
+    CompanyListComponent,
+    formSampleComponent
+   
   ],
   bootstrap: [ AppComponent ]
 })
