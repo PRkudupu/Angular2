@@ -16,7 +16,9 @@ import { ProductService } from './products/product.service';
                     <li><a [routerLink]="['/products']">Product List</a></li>
                     <li><a [routerLink]="['/users']">Users</a></li>
                     <li><a [routerLink]="['/company']">Companies</a></li>
-                </ul>
+                    <li><a [routerLink]="['/css']">Css</a></li>
+                    <li><a [routerLink]="['/sample']">Form Sample</a></li>
+                 </ul>
             </div>
         </nav>
         <div class='container'>

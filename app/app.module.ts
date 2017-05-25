@@ -25,7 +25,8 @@ import { WelcomeComponent }  from './home/welcome.component';
 import { CompanyListComponent }  from './company/company-list.component';
 //Import form sampe component
 import { formSampleComponent }  from './sample/formSample.Component';
-
+//Import css component
+import { CSSComponent } from './css/css.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { formSampleComponent }  from './sample/formSample.Component';
       { path: 'users', component: UserComponent },
       { path: 'company', component: CompanyListComponent },
       { path: 'sample', component: formSampleComponent },
+      { path: 'css', component: CSSComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ])
@@ -54,7 +56,8 @@ import { formSampleComponent }  from './sample/formSample.Component';
     StarComponent,
     UserComponent,
     CompanyListComponent,
-    formSampleComponent
+    formSampleComponent,
+    CSSComponent
    
   ],
   bootstrap: [ AppComponent ]
