@@ -8,7 +8,7 @@ import { ProductService } from './products/product.service';
     selector: 'pm-app',
     template: `
     <div>
-        <nav class='navbar navbar-default'>
+        <nav class='navbar navbar-inverse'>
             <div class='container-fluid'>
                 <a class='navbar-brand'>{{pageTitle}}</a>
                 <ul class='nav navbar-nav'>
@@ -18,6 +18,7 @@ import { ProductService } from './products/product.service';
                     <li><a [routerLink]="['/company']">Companies</a></li>
                     <li><a [routerLink]="['/css']">Css</a></li>
                     <li><a [routerLink]="['/sample']">Form Sample</a></li>
+                    <li><a [routerLink]="['/lifeCycle']">Life Cycle</a></li>
                  </ul>
             </div>
         </nav>

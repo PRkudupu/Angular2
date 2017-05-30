@@ -1,3 +1,22 @@
 p{
-    background-color: blue;
+    background-color: white;
+    color:Red;
+}
+.bname{
+    color:red;
+    font-size:80px
+}
+.gname{
+    color:blue;
+    font-size:80px
+}
+.bpic{
+    width:200px;
+    height:160px;
+
+}
+.gpic{
+    width:200px;
+    height:160px;
+
 }
