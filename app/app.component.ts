@@ -19,6 +19,7 @@ import { ProductService } from './products/product.service';
                     <li><a [routerLink]="['/css']">Css</a></li>
                     <li><a [routerLink]="['/sample']">Form Sample</a></li>
                     <li><a [routerLink]="['/lifeCycle']">Life Cycle</a></li>
+                    <li><a [routerLink]="['/family']">Family</a></li>
                  </ul>
             </div>
         </nav>

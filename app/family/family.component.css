@@ -2,9 +2,7 @@
 p{
     background-color: white;
     color:#000;
-    
 }
-
 .bname{
     color:red;
     font-size:20px
@@ -12,11 +10,6 @@ p{
 .gname{
     color:blue;
     font-size:20px
-}
-.smContainer{
-    height:2000px;
-    width:800px;
-    overflow:auto;
 }
 .bpic{
     width:200px;
@@ -37,29 +30,18 @@ p{
     height:100px;
     margin-bottom: 10px;
  }
- .container{
-    background-color:#ccc;
-    height: 200px;
-    width:200px;
-     border-color: #000;
-     border-style: solid;
-     margin-top:100px;
-     margin-left:500px;
-     position:absolute;
-}
-
-.blueBoxAbsolute{
-    background: red;
-    position:absolute;
-    top:50px;
-    left:50px;
- }
 .blueBoxFixed{
     background: #627da0;
     position:fixed;
-    top:100px;
-    left:150px;
+    top:150px;
+    left:650px;
 }
+.blueBoxAbsolute{
+    background: red;
+    position:absolute;
+   
+}
+
 .greenBox{
     background:#5b8054;
      

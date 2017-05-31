@@ -29,7 +29,8 @@ import { formSampleComponent }  from './sample/formSample.Component';
 import { CSSComponent } from './css/css.component';
 //Import lifecycle component
 import {lifeCycleComponent} from './lifeCycle/lifecycle.component'
-
+//Import family component
+import {familyComponent} from './family/family.Component'
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import {lifeCycleComponent} from './lifeCycle/lifecycle.component'
       { path: 'company', component: CompanyListComponent },
       { path: 'sample', component: formSampleComponent },
       { path: 'css', component: CSSComponent },
+      { path: 'family', component: familyComponent },
       { path: 'lifeCycle', component: lifeCycleComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
@@ -61,6 +63,7 @@ import {lifeCycleComponent} from './lifeCycle/lifecycle.component'
     CompanyListComponent,
     formSampleComponent,
     CSSComponent,
+    familyComponent,
     lifeCycleComponent
    
   ],
