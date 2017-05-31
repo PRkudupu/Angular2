@@ -1,14 +1,15 @@
+
 p{
     background-color: white;
     color:Red;
 }
 .bname{
     color:red;
-    font-size:80px
+    font-size:20px
 }
 .gname{
     color:blue;
-    font-size:80px
+    font-size:20px
 }
 .bpic{
     width:200px;
@@ -31,7 +32,11 @@ p{
  }
 .blueBox{
     background: #627da0;
+    position:fixed;
+    top:150px;
+    left:150px;
 }
 .greenBox{
     background:#5b8054;
+     
 }
