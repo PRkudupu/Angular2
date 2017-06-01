@@ -18,8 +18,20 @@ h1{
     width:200px;
     height:200px;
     border-bottom:1px solid #eee;
-    background-color: lightgrey
+    background-color: lightgrey;
 }
-.blueBox{
+.centerContainer{
+    position:absolute;
+    width:100%;
+    top:50%;
+    margin-top:-50px;
+    left:0;
+}
+.horizontalAlign{
     margin:0 auto;
+}
+.verticalAlign{
+    position:absolute;
+    top:50%;
+    margin-top:-50px;
 }
