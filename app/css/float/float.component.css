@@ -1,7 +1,7 @@
 .floatRight{
     width:200px;
     height:200px;
-    float:right;
+    float:left;
     background-color: red;
     
 }
@@ -10,4 +10,16 @@
     height:200px;
     float:left;
     background-color: #ccc;
+}
+h1{
+    clear:left;
+}
+.box{
+    width:200px;
+    height:200px;
+    border-bottom:1px solid #eee;
+    background-color: lightgrey
+}
+.blueBox{
+    margin:0 auto;
 }
