@@ -26,7 +26,9 @@ import { CompanyListComponent }  from './company/company-list.component';
 //Import form sampe component
 import { formSampleComponent }  from './sample/formSample.Component';
 //Import css component
-import { CSSComponent } from './css/css.component';
+import { FloatComponent } from './css/float/float.component';
+//Import css component
+import { PositioningComponent } from './css/Positioning.component';
 //Import lifecycle component
 import {lifeCycleComponent} from './lifeCycle/lifecycle.component'
 //Import family component
@@ -45,7 +47,8 @@ import {familyComponent} from './family/family.Component'
       { path: 'users', component: UserComponent },
       { path: 'company', component: CompanyListComponent },
       { path: 'sample', component: formSampleComponent },
-      { path: 'css', component: CSSComponent },
+      { path: 'css', component: PositioningComponent },
+      { path: 'float', component: FloatComponent },
       { path: 'family', component: familyComponent },
       { path: 'lifeCycle', component: lifeCycleComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
@@ -62,9 +65,10 @@ import {familyComponent} from './family/family.Component'
     UserComponent,
     CompanyListComponent,
     formSampleComponent,
-    CSSComponent,
+    PositioningComponent,
     familyComponent,
-    lifeCycleComponent
+    lifeCycleComponent,
+    FloatComponent
    
   ],
   bootstrap: [ AppComponent ]

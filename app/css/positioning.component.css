@@ -37,15 +37,26 @@ p{
     height:100px;
     margin-bottom: 10px;
  }
- .container{
+ .containerAbsolute{
     background-color:#ccc;
     height: 200px;
     width:200px;
      border-color: #000;
      border-style: solid;
-     margin-top:100px;
+     margin-top:200px;
      margin-left:500px;
+     position: absolute
+}
+.containerRelative{
+    background-color:#ccc;
+    height: 200px;
+    width:200px;
+     border-color: #000;
+     border-style: solid;
+     margin-top:200px;
+     margin-left:150px;
      position:absolute;
+     
 }
 
 .blueBoxAbsolute{
@@ -55,10 +66,16 @@ p{
     left:50px;
  }
 .blueBoxFixed{
-    background: #627da0;
+    background: brown;
     position:fixed;
-    top:100px;
-    left:150px;
+    top:150px;
+    left:250px;
+ }
+.blueBoxRelative{
+    background: #627da0;
+    position:relative;
+    bottom:0px;
+    left:0px;
 }
 .greenBox{
     background:#5b8054;

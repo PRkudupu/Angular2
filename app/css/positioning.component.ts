@@ -2,12 +2,12 @@
 import {Component} from '@angular/core';
 //Define metaData
 @Component({
-    templateUrl:'app/css/css.component.html',
-    styleUrls:['app/css/css.component.css']
+    templateUrl:'app/css/positioning.component.html',
+    styleUrls:['app/css/positioning.component.css']
   
 })
 //export a class
-export class CSSComponent{
+export class PositioningComponent{
     cssId:String;
     cssName:String;
     csslib:any[]=[
